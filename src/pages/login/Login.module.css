@@ -1,0 +1,144 @@
+:root {
+  --color: rgb(223, 223, 223);
+  /* --color : oklch(87.778% 0.00658 16.449); */
+}
+.container {
+  color: black;
+  border: 1px solid;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  transform: translateY(30%);
+}
+
+.label__item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 20px 25px;
+}
+.login__header {
+  padding: 16px;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.login__guide {
+  padding: 0;
+  margin: 0 0 30px 0;
+  justify-content: center;
+  text-align: center;
+}
+.item__input {
+  border: none;
+  background-color: var(--color);
+  font-size: 1.7rem;
+  margin-left: 10px;
+}
+
+.item__input:focus {
+  outline: none;
+}
+
+.item__box {
+  display: flex;
+  width: 85%;
+  padding: 5px;
+  background-color: var(--color);
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+  position: relative;
+}
+.eye,
+.eyeAppear {
+  position: absolute;
+  right: 3%;
+  color: rgb(111, 121, 130);
+}
+.eye:hover,
+.eyeAppear:hover {
+  color: black;
+}
+.item__icon {
+  color: rgb(111, 121, 130);
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.inner__remember {
+  display: flex;
+  margin-left: 22px;
+}
+.inner__forgot {
+  margin-right: 50px;
+}
+
+.btn {
+  display: block;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  border: none;
+  height: 40px;
+  margin-left: 27px;
+  width: 85%;
+  background-color: black;
+  color: aliceblue;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+.headerFooter {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.checkBox[type="checkbox"] {
+  accent-color: black;
+}
+
+.inner__forgot:hover,
+.signUp:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.signUp {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.focus {
+  border: 1px solid black;
+  box-shadow: 0 0 5px 5px var(--color);
+}
+
+.errNumber,
+.errPassword {
+  font-size: 1.4rem;
+  color: rgb(219, 68, 68);
+  margin-top: 5px;
+}
+.btn:hover {
+  background-color: rgb(92, 89, 89);
+}
+.spinner {
+  margin: 0 auto;
+  border: 3px solid #ccc;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border-top: 3px solid black;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

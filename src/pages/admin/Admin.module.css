@@ -1,0 +1,39 @@
+.admin {
+  height: 100vh;
+  display: flex;
+}
+/* menu */
+.menu {
+  display: flex;
+}
+.main__content {
+  flex: 1;
+}
+.navigation {
+  height: 100vh;
+  background-color: rgb(242, 243, 246);
+  padding-right: 20px;
+  border-right: 1.5px solid rgb(214, 211, 211);
+}
+.navigation__header {
+  padding: 25px;
+}
+.navigation__item {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(213, 214, 214);
+  padding: 5px 100px 5px 10px;
+  border-radius: 10px;
+}
+.navigation__link {
+  text-decoration: none;
+}
+.navigation__title {
+  margin-left: 10px;
+  color: black;
+}
+.navigation__icon{
+  fill: rgb(136, 116, 3) ;
+}

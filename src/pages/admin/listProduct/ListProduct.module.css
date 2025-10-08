@@ -1,0 +1,136 @@
+.list__header {
+  padding: 20px 0 10px 20px;
+}
+.list__header h1:first-child {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color: rgb(9, 5, 0);
+}
+.list__form {
+  margin-top: 15px;
+  display: flex;
+}
+.list__form div:first-child {
+  background-color: rgb(221, 223, 225);
+  width: 30%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+.list__input {
+  background-color: rgb(221, 223, 225);
+  border: none;
+  width: 93%;
+  height: 100%;
+  font-size: 1.7rem;
+  border-radius: 10px;
+}
+.list__input:focus {
+  outline: none;
+}
+.form__icon {
+  width: 7%;
+  fill: rgb(124, 143, 159);
+}
+
+.list__btn {
+  border-radius: 10px;
+  border: none;
+  color: aliceblue;
+  background-color: rgb(22, 71, 26);
+  width: 90px;
+  font-weight: 600;
+}
+.list__btn:hover {
+  background-color: rgb(51, 124, 39);
+}
+/* =========table */
+.table {
+  margin: 20px;
+  border: 1px solid rgb(180, 180, 171);
+  border-radius: 20px;
+  overflow-y: scroll;
+  max-height: 550px;
+  border-right: none;
+}
+.table__column {
+  display: grid;
+  grid-template-columns: 4fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 40px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  z-index: 2;
+  background-color: rgb(50, 79, 79);
+}
+.table__icon {
+  display: block;
+  fill: rgb(111, 121, 130);
+  border: 1px solid rgb(180, 180, 171);
+  border-radius: 5px;
+  /* padding: 5px; */
+  height: 25px;
+  width: 25px;
+}
+.edit:hover {
+  fill: green;
+  border: 1px solid green;
+}
+.delete:hover {
+  fill: rgb(174, 5, 5);
+  border: 1px solid rgb(172, 13, 13);
+}
+.table__item {
+  display: grid;
+  grid-template-columns: 4fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 40px;
+  padding: 15px;
+  border-top: 1px solid rgb(180, 180, 171);
+  line-height: 3rem;
+}
+.table__column p {
+  color: white;
+}
+.table__item p {
+  color: black;
+}
+/* ===========portals */
+.portals {
+  top: -100px;
+  border: none;
+  border-radius: 20px;
+  height: 150px;
+  width: 350px;
+  position: relative;
+  background-color: rgb(45, 102, 102);
+}
+.portals__header {
+  font-size: 2rem;
+  color: aliceblue;
+}
+.portals form {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  /* margin: 30px 10px 10px 100px; */
+}
+
+.portals__btn {
+  border: none;
+  height: 40px;
+  width: 50px;
+  border-radius: 10px;
+  margin-left: 20px;
+  background-color: black;
+  color: aliceblue;
+  font-weight: 600;
+}
+.portals__btn:hover{
+  background-color: rgb(82, 7, 27);
+}
